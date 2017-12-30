@@ -23,3 +23,14 @@ in view you can use
         @endif
 
     @endforeach
+    
+    
+    
+if you would like add new parent and child:
+
+    $tree = new Tree();
+    $tree->setChild('nameOfChild');
+    $tree->setParent('nameOfParent');
+    $tree->create();
+
+method 'setParent' automatically generate id this field.
