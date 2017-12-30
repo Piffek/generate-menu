@@ -9,7 +9,9 @@ class GenerateMenuServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ .'/Migrations' => resource_path('app/database/migrations'),
+            __DIR__.'/Migrations' => database_path('/migrations'),
+            __DIR__.'/Views' => resource_path('/views'),
+            __DIR__.'/Models' => app_path('/'),
         ]);
     }
 }
