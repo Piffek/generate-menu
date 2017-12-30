@@ -1,9 +1,13 @@
 {
   "name": "Piwko/generate-menu",
   "description": "Flexible maganer to multi-level menu for laravel v5.5",
-  "minimum-stability" : "dev",
-  "prefer-stable" : true,
-  "keywords": [ "Piwko", "menu", "Laravel" ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "keywords": [
+    "Piwko",
+    "menu",
+    "Laravel"
+  ],
   "homepage": "https://github.com/Piffek/generate-menu",
   "license": "MIT",
   "authors": [
@@ -12,11 +16,6 @@
       "email": "piwko.patryk1@gmail.com",
       "role": "Developer"
     }
-  ],
-  "repositories" : [{
-    "type" : "composer",
-    "url" : "https://github.com/Piffek/generate-menu"
-  }
   ],
   "autoload": {
     "psr-4": {
@@ -36,12 +35,11 @@
   },
   "extra": {
     "laravel": {
-      "providers":
-      [
-        "Piwko\\GenerateMenu\\GenerateServiceProvider"
+      "providers": [
+        "Piwko\\GenerateMenu\\GenerateMenuServiceProvider"
       ],
-      "branch-alias" : {
-        "dev-master" : "1.0-dev"
+      "branch-alias": {
+        "dev-master": "1.0-dev"
       }
     }
   }
