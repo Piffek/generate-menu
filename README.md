@@ -34,3 +34,14 @@ if you would like add new parent and child:
     $tree->create();
 
 method 'setParent' automatically generate id this field.
+
+To add this package you must add to your composer.json file
+
+    "repositories": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/Piffek/generate-menu.git"
+        }
+    ],
+    
+and use composer update
